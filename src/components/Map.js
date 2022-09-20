@@ -1,5 +1,8 @@
 /* global kakao */
 import React, { useEffect } from "react";
+import styles from '../css/Map.module.css'
+import Menubar from "./Menubar";
+
 const { kakao } = window;
 
 const Map = () => {
@@ -22,8 +25,14 @@ const Map = () => {
   }, []);
 
   return (
-    <div>
-        <div id="map" style={{width:'500px', height:'400px'}}></div>
+    <div className={styles.Map}>
+        <div className={styles.searchSec}>
+          <input type="text" placeholder="장소를 검색해보세요" className={styles.searchCont} />
+          <div className={styles.searchGo}><img src='/img/go.png' alt="go" /> <div>길찾기</div></div>  
+        </div>
+
+        <Menubar />
+        <div id="map" style={{width:'100vw', height:'100vh'}}></div>
     </div>
   );
 };

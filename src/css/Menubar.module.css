@@ -1,0 +1,32 @@
+a{
+    text-decoration: none;
+}
+
+.menuSec {
+    width: 100%;
+    padding-top: 10px;
+    height: 85px;
+    display: flex; 
+    background-color: #DEE2E6;
+    font-size: 12px;
+    justify-content: space-evenly;
+    position: fixed;
+    z-index: 4;
+    bottom: 0;
+}
+
+.menuSec .menuItem {
+    text-align: center;
+    color: #868E96;
+}
+
+.menuSec .selected {
+    color: #495057;
+}
+
+.menuSec img {
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    margin-bottom: 5px;
+}
